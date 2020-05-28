@@ -1,0 +1,14 @@
+.CardHeading{
+    text-decoration: underline;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-weight: bolder !important;
+}
+
+.Cards{
+    border: #FFF 5px solid !important;
+    background-image: linear-gradient(135deg,#02aab0,#16e0bd);
+    color: #000;
+}
+
+            
