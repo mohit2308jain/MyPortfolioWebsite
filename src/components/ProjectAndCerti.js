@@ -49,14 +49,14 @@ class ProCert extends React.Component{
         return(
             <div className="container-fluid py-5 border-bottom border-top border-white" style={{backgroundColor:'black', color:'white'}}>
                 <div className="border border-white rounded p-1 m-3">
-                    <CardHeader className='CardHeading h1'>PROJECTS</CardHeader>
+                    <div className="row m-2"><div className='CardHeading h1 col-12'>Projects</div></div>
                     <div className="row m-2">
                         {projects}
                     </div>
                 </div>
 
                 <div className="border border-white rounded p-1 my-5 mx-3">
-                <CardHeader className='CardHeading h1'>Certifications</CardHeader>
+                    <div className="row m-2"><div className='CardHeading col-sm-12'>Certifications</div></div>
                     <div className="row m-2">
                         {certifications}
                     </div>
