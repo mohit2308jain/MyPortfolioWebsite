@@ -12,7 +12,7 @@ export const PROJECTS =
             name:'ToDo Web App Using MERN Stack',
             year:'May 2020',
             description:'A Todo web app build using React for front-end, MongoDB for database, Node and Express for back-end of the web app. The User can add the task with the category, due date and remarks for the task. The User can also delete a particular task and mark the task as completed.',
-            link: 'https://github.com/mohit2308jain/ToDo-MERN-Stack'
+            link: 'https://github.com/mohit2308jain/ToDo-WebApp'
         },
         {
             id: 2,
