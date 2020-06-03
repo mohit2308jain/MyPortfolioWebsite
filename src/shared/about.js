@@ -5,4 +5,4 @@ export const ABOUT = `Currently, Working as a Senior Analyst at Capgemini, India
     Also works on Salesforce.com Administration and Development projects.
     Philatelist by Hobby. Loves to listen to music and explore new places.`;
 
-export const LINK = 'https://drive.google.com/open?id=1azVjoKRqb8kRJfxxJGj80HrCYLwKbbCH';
+export const LINK = 'https://drive.google.com/file/d/1zI8NofxG5LZUibAS56xxIpQjOXWMfRM_/view?usp=sharing';
