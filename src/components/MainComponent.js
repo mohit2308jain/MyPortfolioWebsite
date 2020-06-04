@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import { PROJECTS } from '../shared/projects';
 import { CERTIFICATIONS } from '../shared/certifications';
 
-import Header from './HeaderComponent';
 import Intro from './IntroComponent';
 import About from './AboutComponent';
 import Footer from './FooterComponent'
