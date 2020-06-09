@@ -1,6 +1,6 @@
 import React from 'react';
 import '../stylesheets/AboutComponent.css';
-import { Card, CardBody, CardText, CardHeader, ListGroup, ListGroupItem, Button } from 'reactstrap';
+import { Card, CardBody, CardTitle, CardSubTitle, CardText, CardHeader, ListGroup, ListGroupItem, Button } from 'reactstrap';
 import { ABOUT, SKILLS, LINK, EXP } from '../shared/about';
 
 class About extends React.Component{
