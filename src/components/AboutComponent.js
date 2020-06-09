@@ -20,7 +20,7 @@ class About extends React.Component{
             <React.Fragment>
                 <section className="about-me">
                     <h2 className="section__title section__title--about">Who I am</h2>
-                    <p className="section__subtitle section__subtitle--about">Senior Analyst at Capgemini India</p>
+                    <p className="section__subtitle section__subtitle--about">Student at SRM Institute of Science & Technology.</p>
                 </section>
                 <div className="container-fluid b1">
                     <div className="row p-2">
