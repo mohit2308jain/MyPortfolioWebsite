@@ -24,7 +24,7 @@ class About extends React.Component{
                 </section>
                 <div className="container-fluid b1">
                     <div className="row p-2">
-                        <div className="col-12 col-sm-8 my-5">
+                        <div className="col-12 col-sm-4 my-5">
 
                             <Card className="Card1">
                                 <CardHeader tag="h3" style={{ backgroundColor: '#00FF7F', color:'#000', textAlign:'center'}}>
@@ -33,6 +33,19 @@ class About extends React.Component{
                                 <CardBody>
                                     <CardText>{this.state.about}</CardText>
                                     <Button color="secondary" onClick={() => window.open(link, "_blank")}>Resume</Button>
+                                </CardBody>
+                            </Card>
+                        </div>
+                        <div className="col-12 col-sm-4 my-5">
+
+                            <Card className="Card1">
+                                <CardHeader tag="h3" style={{ backgroundColor: '#00FF7F', color:'#000', textAlign:'center'}}>
+                                Experience
+                                </CardHeader>
+                                <CardBody>
+                                    <CardTitle className=""font-weight-bold>{this.state.exp.title}</CardTitle>
+                                    <CardSubtitle>{this.state.exp.period}</CardSubtitle>
+                                    <CardText>{this.state.exp.tasks}</CardText>
                                 </CardBody>
                             </Card>
                         </div>
@@ -54,21 +67,6 @@ class About extends React.Component{
                                         }
                                     </ListGroup>
                                     </CardText>
-                                </CardBody>
-                            </Card>
-                        </div>
-                    </div>
-                    <div className="row p-2">
-                        <div className="col-12 col-sm-8 my-5">
-
-                            <Card className="Card1">
-                                <CardHeader tag="h3" style={{ backgroundColor: '#00FF7F', color:'#000', textAlign:'center'}}>
-                                About ME
-                                </CardHeader>
-                                <CardBody>
-                                    <CardTitle>{this.state.exp.title}</CardTitle>
-                                    <CardSubtitle>{this.state.exp.period}</CardSubtitle>
-                                    <CardText>{this.state.exp.tasks}</CardText>
                                 </CardBody>
                             </Card>
                         </div>
