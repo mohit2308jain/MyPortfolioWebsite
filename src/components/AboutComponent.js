@@ -1,14 +1,15 @@
 import React from 'react';
 import '../stylesheets/AboutComponent.css';
 import { Card, CardBody, CardText, CardHeader, ListGroup, ListGroupItem, Button } from 'reactstrap';
-import { ABOUT, SKILLS, LINK } from '../shared/about';
+import { ABOUT, SKILLS, LINK, EXP } from '../shared/about';
 
 class About extends React.Component{
 
     state={
         about: ABOUT,
         skills: SKILLS,
-        link: LINK
+        link: LINK,
+        exp: EXP
     }
     
     render(){
@@ -53,6 +54,21 @@ class About extends React.Component{
                                         }
                                     </ListGroup>
                                     </CardText>
+                                </CardBody>
+                            </Card>
+                        </div>
+                    </div>
+                    <div className="row p-2">
+                        <div className="col-12 col-sm-8 my-5">
+
+                            <Card className="Card1">
+                                <CardHeader tag="h3" style={{ backgroundColor: '#00FF7F', color:'#000', textAlign:'center'}}>
+                                About ME
+                                </CardHeader>
+                                <CardBody>
+                                    <CardTitle>{this.state.exp.title}</CardTitle>
+                                    <CardSubtitle>{this.state.exp.period}</CardSubtitle>
+                                    <CardText>{this.state.exp.tasks}</CardText>
                                 </CardBody>
                             </Card>
                         </div>
