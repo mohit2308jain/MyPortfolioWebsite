@@ -1,20 +1,12 @@
 import React from 'react';
 import '../stylesheets/AboutComponent.css';
 import { Card, CardBody, CardTitle, CardSubtitle, CardText, CardHeader, ListGroup, ListGroupItem, Button } from 'reactstrap';
-import { ABOUT, SKILLS, LINK, EXP } from '../shared/about';
 
 class About extends React.Component{
-
-    state={
-        about: ABOUT,
-        skills: SKILLS,
-        link: LINK,
-        exp: EXP
-    }
     
     render(){
 
-        const link = this.state.link;
+        const link = this.props.link;
 
         return(
             <React.Fragment>
@@ -31,7 +23,7 @@ class About extends React.Component{
                                 About ME
                                 </CardHeader>
                                 <CardBody>
-                                    <CardText>{this.state.about}</CardText>
+                                    <CardText>{this.props.about}</CardText>
                                     <Button color="secondary" onClick={() => window.open(link, "_blank")}>Resume</Button>
                                 </CardBody>
                             </Card>
@@ -43,9 +35,9 @@ class About extends React.Component{
                                 Experience
                                 </CardHeader>
                                 <CardBody>
-                                    <CardTitle className=""font-weight-bold>{this.state.exp.title}</CardTitle>
-                                    <CardSubtitle>{this.state.exp.period}</CardSubtitle>
-                                    <CardText>{this.state.exp.tasks}</CardText>
+                                    <CardTitle className="font-weight-bold">{this.props.exp.title}</CardTitle>
+                                    <CardSubtitle>{this.props.exp.period}</CardSubtitle>
+                                    <CardText>{this.props.exp.tasks}</CardText>
                                 </CardBody>
                             </Card>
                         </div>
@@ -59,7 +51,7 @@ class About extends React.Component{
                                     <CardText>
                                     <ListGroup>
                                         {
-                                            this.state.skills.map((skill) => {
+                                            this.props.skills.map((skill) => {
                                                 return(
                                                     <ListGroupItem>{skill}</ListGroupItem>
                                                 )

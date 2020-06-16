@@ -25,18 +25,12 @@ class Header extends Component {
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <Nav navbar>
+                            <Nav navbar style={{marginLeft: 'auto'}}>
                                 <NavItem>
                                     <NavLink className="nav-link" to='/home'><span className="fa fa-home fa-lg"></span> Home</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to='/aboutus'><span className="fa fa-info fa-lg"></span> About Me</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink className="nav-link" to='/menu'><span className="fa fa-list fa-lg"></span> Projects & Certifications</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink className="nav-link" to='/contactus'><span className="fa fa-address-card fa-lg"></span> Contact Me</NavLink>
+                                    <NavLink className="nav-link" to='/about'><span className="fa fa-info fa-lg"></span> About Me</NavLink>
                                 </NavItem>
                             </Nav>
                         </Collapse>
