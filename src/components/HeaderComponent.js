@@ -12,6 +12,10 @@ class Header extends Component {
         };
     }
 
+    closeNavBar = (event) => {
+        this.setState({isNavOpen: false})
+    }
+
     toggleNav() {
         this.setState({
         isNavOpen: !this.state.isNavOpen
@@ -27,10 +31,12 @@ class Header extends Component {
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar style={{marginLeft: 'auto'}}>
                                 <NavItem>
-                                    <NavLink className="nav-link" to='/home'><span className="fa fa-home fa-lg"></span> Home</NavLink>
+                                    <NavLink className="nav-link" to='/home' onClick={(event) => this.closeNavBar(event)}>
+                                        <span className="fa fa-home fa-lg"></span> Home</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to='/about'><span className="fa fa-info fa-lg"></span> About Me</NavLink>
+                                    <NavLink className="nav-link" to='/about' onClick={(event) => this.closeNavBar(event)}>
+                                        <span className="fa fa-info fa-lg"></span> About Me</NavLink>
                                 </NavItem>
                             </Nav>
                         </Collapse>
