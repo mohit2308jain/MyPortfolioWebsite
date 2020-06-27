@@ -10,7 +10,7 @@ const RenderCard = (props) => {
     return(
         <div className='col-12 col-sm-6 my-2'>
             <Card className="Cards">
-                <CardHeader tag="h3" style={{ backgroundColor: '#00FF7F', color:'#000', textAlign:'center'}}>
+                <CardHeader tag="h5" style={{ backgroundColor: '#00FF7F', color:'#000', textAlign:'center'}}>
                 {item.name}
                 </CardHeader>
                 <CardBody>

@@ -25,7 +25,7 @@ class Header extends Component {
     render() {
         return(
             <div>
-                <Navbar dark expand="md" style={{background:'black'}}>
+                <Navbar dark expand="md" style={{background:'black'}} className="border-bottom border-white">
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
