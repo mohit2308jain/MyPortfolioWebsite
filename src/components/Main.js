@@ -5,11 +5,12 @@ import { PROJECTS } from '../shared/projects';
 import { CERTIFICATIONS } from '../shared/certifications';
 import { ABOUT, SKILLS, LINK, EXP } from '../shared/about';
 
-import Intro from './IntroComponent';
-import About from './AboutComponent';
-import Footer from './FooterComponent'
-import ProCert from './ProjectAndCerti';
-import Header from './HeaderComponent';
+import Intro from './Intro';
+import About from './About';
+import Footer from './Footer'
+import Certifications from './Certifications';
+import Projects from './Projects';
+import Header from './Header';
 
 class Main extends React.Component{
 
@@ -36,9 +37,9 @@ class Main extends React.Component{
                 <Route path='/about' component={() => <div>
                     <About about={this.state.about} skills={this.state.skills}
                                     link={this.state.link} exp={this.state.exp}/> 
-                    <ProCert projects={this.state.projects} 
-                                    certifications={this.state.certifications}/>
+                    <Certifications certifications={this.state.certifications}/>
                     </div> }  />
+                <Route path='/projects' component={() => <Projects projects={this.state.projects} />} />
                 <Redirect to='/home' />
             </Switch>     
             <Footer />

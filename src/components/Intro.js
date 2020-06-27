@@ -12,9 +12,9 @@ class Intro extends React.Component {
           <Container fluid>
             <div className="intro" style={{marginTop:'30px', marginBottom:'30px'}}>
               <h1 className="section__title section__title--intro">
-                  Hi, I am <strong>Mohit Jain</strong>
+                  Hi, I am <div className="font-weight-bold">Mohit Jain</div>
               </h1>
-              <p className="section__subtitle section__subtitle--intro">front-end dev</p>
+              <p className="section__subtitle section__subtitle--intro font-weight-bold">MERN Stack Dev</p>
               <img src={profilepicture} alt="Profile" className="intro__img" />
           
             </div>

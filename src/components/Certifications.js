@@ -3,17 +3,10 @@ import '../stylesheets/ProjectAndCerti.css';
 import { Card, CardBody, CardSubtitle, CardText, CardHeader, Button} from 'reactstrap';
 
 const RenderCard = (props) => {
-    let item;
-    let buttonLabel='';
-    if(props.project){
-        item = props.project;
-        buttonLabel='See Project';
-    }
-    else{
-        item=props.certification
-        buttonLabel = 'See Certification'
-    }
+    const item = props.certification
+    const buttonLabel = 'See Certification';
     const link = item.link;
+    
     return(
         <div className='col-12 col-sm-6 my-2'>
             <Card className="Cards">
@@ -31,15 +24,9 @@ const RenderCard = (props) => {
     )
 }
 
-class ProCert extends React.Component{
+class Certifications extends React.Component{
 
     render(){
-        const projects = this.props.projects.map((pro) => {
-            return (
-                <RenderCard project={pro} />
-            )
-        })
-
         const certifications = this.props.certifications.map((cert) => {
             return (
                 <RenderCard certification={cert} />
@@ -48,13 +35,6 @@ class ProCert extends React.Component{
 
         return(
             <div className="container-fluid py-5 border-bottom border-top border-white" style={{backgroundColor:'black', color:'white'}}>
-                <div className="border border-white rounded p-1 m-3">
-                    <div className="row m-2"><div className='CardHeading h1 col-12'>Projects</div></div>
-                    <div className="row m-2">
-                        {projects}
-                    </div>
-                </div>
-
                 <div className="border border-white rounded p-1 my-5 mx-3">
                     <div className="row m-2"><div className='CardHeading col-sm-12'>Certifications</div></div>
                     <div className="row m-2">
@@ -66,4 +46,4 @@ class ProCert extends React.Component{
     }
 }
 
-export default ProCert;
+export default Certifications;

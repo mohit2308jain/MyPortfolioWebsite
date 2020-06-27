@@ -9,7 +9,7 @@ class Footer extends React.Component{
             <a href="mailto:mohitjain5000@gmail.com" class="footer__link">mohitjain5000@gmail.com</a>
             <ul class="social-list">
                 <li class="social-list__item">
-                    <a class="social-list__link" href="https://codepen.io">
+                    <a class="social-list__link" href="https://www.facebook.com/profile.php?id=100002437404460">
                         <i class="fa fa-facebook"></i>
                     </a>
                 </li>

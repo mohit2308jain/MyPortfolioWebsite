@@ -16,32 +16,38 @@ class About extends React.Component{
                 </section>
                 <div className="container-fluid b1">
                     <div className="row p-2">
-                        <div className="col-12 col-sm-4 my-5">
+                        <div className="col-12 col-md-8 my-5">
+                            <div className="row">
+                                <div className="col-12">
+                                    <Card className="Card1 my-1">
+                                        <CardHeader tag="h3" style={{ backgroundColor: '#00FF7F', color:'#000', textAlign:'center'}}>
+                                        About ME
+                                        </CardHeader>
+                                        <CardBody>
+                                            <CardText>{this.props.about}</CardText>
+                                            <Button color="secondary" onClick={() => window.open(link, "_blank")}>Resume</Button>
+                                        </CardBody>
+                                    </Card>
+                                </div>
+                            </div>
 
-                            <Card className="Card1">
-                                <CardHeader tag="h3" style={{ backgroundColor: '#00FF7F', color:'#000', textAlign:'center'}}>
-                                About ME
-                                </CardHeader>
-                                <CardBody>
-                                    <CardText>{this.props.about}</CardText>
-                                    <Button color="secondary" onClick={() => window.open(link, "_blank")}>Resume</Button>
-                                </CardBody>
-                            </Card>
-                        </div>
-                        <div className="col-12 col-sm-4 my-5">
+                            <div className="row">
+                                <div className="col-12 my-1">
+                                    <Card className="Card1">
+                                        <CardHeader tag="h3" style={{ backgroundColor: '#00FF7F', color:'#000', textAlign:'center'}}>
+                                        Experience
+                                        </CardHeader>
+                                        <CardBody>
+                                            <CardTitle className="font-weight-bold">{this.props.exp.title}</CardTitle>
+                                            <CardSubtitle>{this.props.exp.period}</CardSubtitle>
+                                            <CardText>{this.props.exp.tasks}</CardText>
+                                        </CardBody>
+                                    </Card>
+                                </div>
+                            </div>
 
-                            <Card className="Card1">
-                                <CardHeader tag="h3" style={{ backgroundColor: '#00FF7F', color:'#000', textAlign:'center'}}>
-                                Experience
-                                </CardHeader>
-                                <CardBody>
-                                    <CardTitle className="font-weight-bold">{this.props.exp.title}</CardTitle>
-                                    <CardSubtitle>{this.props.exp.period}</CardSubtitle>
-                                    <CardText>{this.props.exp.tasks}</CardText>
-                                </CardBody>
-                            </Card>
                         </div>
-                        <div className="col-12 col-sm-4 my-5">
+                        <div className="col-12 col-md-4 my-5">
 
                             <Card className="Card1">
                                 <CardHeader tag="h3" style={{ backgroundColor: '#00FF7F', color:'#000', textAlign:'center'}}>
