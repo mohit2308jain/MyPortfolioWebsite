@@ -19,8 +19,8 @@ class About extends React.Component{
                         <div className="col-12 col-md-8 my-5">
                             <div className="row">
                                 <div className="col-12">
-                                    <Card className="Card1 my-1">
-                                        <CardHeader tag="h3" style={{ backgroundColor: '#00FF7F', color:'#000', textAlign:'center'}}>
+                                    <Card className="Card1 mb-3">
+                                        <CardHeader tag="h3" style={{ backgroundColor: '#123', color:'#FFF', textAlign:'center'}}>
                                         About ME
                                         </CardHeader>
                                         <CardBody>
@@ -32,9 +32,9 @@ class About extends React.Component{
                             </div>
 
                             <div className="row">
-                                <div className="col-12 my-1">
+                                <div className="col-12 mb-2">
                                     <Card className="Card1">
-                                        <CardHeader tag="h3" style={{ backgroundColor: '#00FF7F', color:'#000', textAlign:'center'}}>
+                                        <CardHeader tag="h3" style={{ backgroundColor: '#123', color:'#FFF', textAlign:'center'}}>
                                         Experience
                                         </CardHeader>
                                         <CardBody>
@@ -50,7 +50,7 @@ class About extends React.Component{
                         <div className="col-12 col-md-4 my-5">
 
                             <Card className="Card1">
-                                <CardHeader tag="h3" style={{ backgroundColor: '#00FF7F', color:'#000', textAlign:'center'}}>
+                                <CardHeader tag="h3" style={{ backgroundColor: '#123', color:'#FFF', textAlign:'center'}}>
                                     Skilled In
                                 </CardHeader>
                                 <CardBody>
