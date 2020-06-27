@@ -10,7 +10,7 @@ const RenderCard = (props) => {
     return(
         <div className='col-12 col-sm-6 my-2'>
             <Card className="Cards">
-                <CardHeader tag="h3" style={{ backgroundColor: '#00FF7F', color:'#000', textAlign:'center'}}>
+                <CardHeader tag="h3" style={{ backgroundColor: '#123', color:'#FFF', textAlign:'center'}}>
                 {item.name}
                 </CardHeader>
                 <CardBody>
@@ -34,7 +34,7 @@ class Projects extends React.Component{
         })
 
         return(
-            <div className="container-fluid py-5 border-bottom border-top border-white" style={{backgroundColor:'black', color:'white'}}>
+            <div className="container-fluid py-5 border-bottom border-top border-white" style={{backgroundColor:'#222', color:'white'}}>
                 <div className="border border-white rounded p-1 m-3">
                     <div className="row m-2"><div className='CardHeading h1 col-12'>Projects</div></div>
                     <div className="row m-2">
