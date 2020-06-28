@@ -29,7 +29,7 @@ class Certifications extends React.Component{
     render(){
         const certifications = this.props.certifications.map((cert) => {
             return (
-                <RenderCard certification={cert} />
+                <RenderCard certification={cert} key={cert.id}/>
             )
         })
 

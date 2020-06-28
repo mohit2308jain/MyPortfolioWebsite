@@ -20,8 +20,8 @@ const RenderCard = (props) => {
                     {
                         buttonLabels.map((label, index) => {
                             return(
-                            <span className="mr-2 mb-2 mb-md-0">
-                                <Button color="danger" onClick={() => window.open(links[index], "_blank")}>{label}</Button>
+                            <span className="mr-2" key={index}>
+                                <Button className="mb-2" color="danger" onClick={() => window.open(links[index], "_blank")}>{label}</Button>
                             </span>
                             )
                         })
@@ -37,7 +37,7 @@ class Projects extends React.Component{
     render(){
         const projects = this.props.projects.map((pro) => {
             return (
-                <RenderCard project={pro} />
+                <RenderCard project={pro} key={pro.id}/>
             )
         })
 

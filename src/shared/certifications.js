@@ -22,7 +22,7 @@ export const CERTIFICATIONS =
             link: 'https://www.udemy.com/certificate/UC-86f61a79-0c48-4383-ad21-8cabfecfaf68'
         },
         {
-            id: 5,
+            id: 4,
             name: 'Software Engineering Virtual Experience',
             year: 'Issued May 2020',
             organization: 'InsideSherpa',

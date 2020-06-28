@@ -54,17 +54,15 @@ class About extends React.Component{
                                     Skilled In
                                 </CardHeader>
                                 <CardBody>
-                                    <CardText>
                                     <ListGroup>
                                         {
-                                            this.props.skills.map((skill) => {
+                                            this.props.skills.map((skill, index) => {
                                                 return(
-                                                    <ListGroupItem>{skill}</ListGroupItem>
+                                                    <ListGroupItem key={index}>{skill}</ListGroupItem>
                                                 )
                                             })
                                         }
                                     </ListGroup>
-                                    </CardText>
                                 </CardBody>
                             </Card>
                         </div>
