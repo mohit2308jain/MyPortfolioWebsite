@@ -16,23 +16,23 @@ class About extends React.Component{
                 </section>
                 <div className="container-fluid b1">
                     <div className="row p-2">
-                        <div className="col-12 col-md-8 my-5">
+                        <div className="col-12 col-md-8">
                             <div className="row">
                                 <div className="col-12">
-                                    <Card className="Card1 mb-3">
+                                    <Card className="Card1 my-3">
                                         <CardHeader tag="h3" style={{ backgroundColor: '#123', color:'#FFF', textAlign:'center'}}>
                                         About ME
                                         </CardHeader>
                                         <CardBody>
                                             <CardText>{this.props.about}</CardText>
-                                            <Button color="secondary" onClick={() => window.open(link, "_blank")}>Resume</Button>
+                                            <Button color="danger" onClick={() => window.open(link, "_blank")}>Resume</Button>
                                         </CardBody>
                                     </Card>
                                 </div>
                             </div>
 
                             <div className="row">
-                                <div className="col-12 mb-2">
+                                <div className="col-12 my-3">
                                     <Card className="Card1">
                                         <CardHeader tag="h3" style={{ backgroundColor: '#123', color:'#FFF', textAlign:'center'}}>
                                         Experience
@@ -47,7 +47,7 @@ class About extends React.Component{
                             </div>
 
                         </div>
-                        <div className="col-12 col-md-4 my-5">
+                        <div className="col-12 col-md-4 my-3">
 
                             <Card className="Card1">
                                 <CardHeader tag="h3" style={{ backgroundColor: '#123', color:'#FFF', textAlign:'center'}}>

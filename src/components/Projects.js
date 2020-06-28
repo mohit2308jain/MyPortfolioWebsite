@@ -4,11 +4,11 @@ import { Card, CardBody, CardSubtitle, CardText, CardHeader, Button} from 'react
 
 const RenderCard = (props) => {
     const item = props.project;
-    const buttonLabel = 'See Project';
-    const link = item.link;
+    const buttonLabels = item.labels;
+    const links = item.links;
     
     return(
-        <div className='col-12 col-sm-6 my-2'>
+        <div className='col-12 col-md-6 my-2'>
             <Card className="Cards">
                 <CardHeader tag="h4" style={{ backgroundColor: '#123', color:'#FFF', textAlign:'center'}}>
                 {item.name}
@@ -17,7 +17,15 @@ const RenderCard = (props) => {
                     <CardSubtitle>{item.year}</CardSubtitle>
                     <CardText>{item.description}
                     </CardText>
-                    <Button color="secondary" onClick={() => window.open(link, "_blank")}>{buttonLabel}</Button>
+                    {
+                        buttonLabels.map((label, index) => {
+                            return(
+                            <span className="mr-2">
+                                <Button color="danger" onClick={() => window.open(links[index], "_blank")}>{label}</Button>
+                            </span>
+                            )
+                        })
+                    }
                 </CardBody>
             </Card>
         </div>
