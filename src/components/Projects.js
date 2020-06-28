@@ -20,7 +20,7 @@ const RenderCard = (props) => {
                     {
                         buttonLabels.map((label, index) => {
                             return(
-                            <span className="mr-2">
+                            <span className="mr-2 mb-2 mb-md-0">
                                 <Button color="danger" onClick={() => window.open(links[index], "_blank")}>{label}</Button>
                             </span>
                             )
