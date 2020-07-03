@@ -33,13 +33,15 @@ class Main extends React.Component{
             <Header />
             </div>
             <Switch>
-                <Route path='/home' component={Intro} />
+                <Route path='/home' component={() => <div>
+                    <Intro />
+                    <Projects projects={this.state.projects} />
+                    </div>} />
                 <Route path='/about' component={() => <div>
                     <About about={this.state.about} skills={this.state.skills}
                                     link={this.state.link} exp={this.state.exp}/> 
                     <Certifications certifications={this.state.certifications}/>
                     </div> }  />
-                <Route path='/projects' component={() => <Projects projects={this.state.projects} />} />
                 <Redirect to='/home' />
             </Switch>     
             <Footer />

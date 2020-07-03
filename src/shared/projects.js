@@ -13,8 +13,8 @@ export const PROJECTS =
             name:'Like Youtube',
             year:'June 2020',
             description:'A single page web app clone of youtube home page. The app is built using React, Redux and Reactstrap is used for styling the web app along with youtube data API.',
-            links: ['https://github.com/mohit2308jain/LikeYT-React'],
-            labels: ['Github Link']
+            links: ['http://like-yt-react.vercel.app/'],
+            labels: ['See Project']
         },
         {
             id: 3,
@@ -29,7 +29,7 @@ export const PROJECTS =
             name:'Movies, Books, Food - All In One',
             year:'June 2020',
             description:'The web app allows users to search for their favorite movies, books, and food along with the weather information for the location of their preference. The app uses different public APIs for providing information to users. The app is built using both React and Angular as different versions of the app.',
-            links: ['https://github.com/mohit2308jain/AllInOne-React', 'https://github.com/mohit2308jain/AllInOne-Angular'],
+            links: ['https://allinone-react.vercel.app', 'https://allinone-angular.vercel.app'],
             labels: ['React Link', 'Angular Link']
         }
     ];
