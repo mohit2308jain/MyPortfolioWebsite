@@ -16,7 +16,6 @@ class Intro extends React.Component {
               </h1>
               <p className="section__subtitle section__subtitle--intro font-weight-bold">MERN Stack Dev</p>
               <img src={profilepicture} alt="Profile" className="intro__img" />
-          
             </div>
           </Container>
         </Jumbotron>
