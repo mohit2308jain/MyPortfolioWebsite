@@ -38,6 +38,10 @@ class Header extends Component {
                                     <NavLink className="nav-link" to='/about' onClick={(event) => this.closeNavBar(event)}>
                                         <span className="fa fa-info fa-lg"></span> About Me</NavLink>
                                 </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link" to='/contact' onClick={(event) => this.closeNavBar(event)}>
+                                        <span className="fa fa-info fa-lg"></span> Contact Me</NavLink>
+                                </NavItem>
                             </Nav>
                         </Collapse>
                     </div>

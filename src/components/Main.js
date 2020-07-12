@@ -10,6 +10,7 @@ import About from './About';
 import Footer from './Footer'
 import Certifications from './Certifications';
 import Projects from './Projects';
+import ContactForm from './ContactForm';
 import Header from './Header';
 
 class Main extends React.Component{
@@ -42,6 +43,7 @@ class Main extends React.Component{
                                     link={this.state.link} exp={this.state.exp}/> 
                     <Certifications certifications={this.state.certifications}/>
                     </div> }  />
+                <Route path='/contact' component={ContactForm} />
                 <Redirect to='/home' />
             </Switch>     
             <Footer />
