@@ -43,7 +43,7 @@ class Projects extends React.Component{
 
         return(
             <div className="container-fluid py-5 border-bottom border-top border-white" style={{backgroundColor:'#222', color:'white'}}>
-                <div className="border border-white rounded p-1 m-3">
+                <div className="border border-white rounded">
                     <div className="row m-2"><div className='CardHeading h1 col-12'>Projects</div></div>
                     <div className="row m-2">
                         {projects}
