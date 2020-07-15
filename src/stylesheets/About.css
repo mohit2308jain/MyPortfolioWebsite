@@ -113,6 +113,10 @@ h3 { font-size: var(--fs-h3) }
     color: #000;
 }
 
+.Card1:hover{
+    transform: scale(1.02) !important;
+}
+
 .b1{
     background: #303030 !important;
 }

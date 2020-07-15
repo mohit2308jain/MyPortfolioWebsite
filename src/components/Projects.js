@@ -1,6 +1,7 @@
 import React from 'react';
-import '../stylesheets/ProjectAndCerti.css';
 import { Card, CardBody, CardSubtitle, CardText, CardHeader, Button} from 'reactstrap';
+
+import '../stylesheets/ProjectAndCerti.css';
 
 const RenderCard = (props) => {
     const item = props.project;
@@ -21,7 +22,7 @@ const RenderCard = (props) => {
                         buttonLabels.map((label, index) => {
                             return(
                             <span className="mr-2" key={index}>
-                                <Button className="mb-2" color="danger" onClick={() => window.open(links[index], "_blank")}>{label}</Button>
+                                <Button className="mb-2 font-weight-bold" color="dark" outline onClick={() => window.open(links[index], "_blank")}>{label}</Button>
                             </span>
                             )
                         })

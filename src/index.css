@@ -6,6 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #e9ecef !important;
+  animation-duration: 2s;
+  animation-name: slidein;
 }
 
 code {
@@ -27,4 +29,16 @@ code {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #123456; 
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 250%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }

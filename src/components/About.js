@@ -1,6 +1,7 @@
 import React from 'react';
-import '../stylesheets/AboutComponent.css';
 import { Card, CardBody, CardTitle, CardSubtitle, CardText, CardHeader, ListGroup, ListGroupItem, Button } from 'reactstrap';
+
+import '../stylesheets/About.css';
 
 class About extends React.Component{
     

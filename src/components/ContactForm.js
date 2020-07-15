@@ -1,6 +1,8 @@
 import React from "react";
 import { Label, Form, Input, Button, Jumbotron } from "reactstrap";
 
+import '../stylesheets/Contact.css';
+
 class ContactForm extends React.Component {
     state = {
         status: ""
@@ -28,9 +30,7 @@ class ContactForm extends React.Component {
     render() {
         const { status } = this.state;
         return (
-            <Jumbotron className="container" style={{marginTop: '6rem', 
-                background: 'linear-gradient(110.53deg, rgb(21, 37, 48) 0%, rgb(4, 2, 3) 100%)',
-                color: 'white'}}>
+            <Jumbotron className="container contactContainer">
                 <Form onSubmit={(event) => this.submitForm(event)}
                 action="https://formspree.io/mzbjkzoe"
                 method="POST">

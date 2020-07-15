@@ -1,7 +1,8 @@
 import React from 'react';
-import '../stylesheets/IntroComponent.css';
-import profilepicture from '../img/profilepicture.jpeg';
 import { Jumbotron, Container } from 'reactstrap';
+
+import '../stylesheets/Intro.css';
+import profilepicture from '../img/profilepicture.jpeg';
 
 class Intro extends React.Component {
   
