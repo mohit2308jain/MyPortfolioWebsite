@@ -1,8 +1,7 @@
 @media only screen and (max-width: 400px){
     .contactContainer{
         border-radius: 0px !important;
-        margin-bottom: 0px !important;
-        margin-top: 0rem !important;
+        margin: 0px !important;
         padding-top: 6rem !important;
     }
 }
@@ -10,5 +9,5 @@
 .contactContainer{
     background: linear-gradient(110.53deg, rgb(21, 37, 48) 0%, rgb(4, 2, 3) 100%);
     color: white;
-    margin: 5rem;
+    margin: 5rem !important;
 }
