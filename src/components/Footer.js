@@ -6,7 +6,7 @@ class Footer extends React.Component{
 
     render(){
         return(
-            <footer className="footer">
+            <footer className="footer border-top border-white">
             <a href="mailto:mohitjain5000@gmail.com" className="footer__link">mohitjain5000@gmail.com</a>
             <ul className="social-list">
                 <li className="social-list__item">
