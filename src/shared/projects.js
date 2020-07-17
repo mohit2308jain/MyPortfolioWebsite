@@ -10,6 +10,14 @@ export const PROJECTS =
         },
         {
             id: 2,
+            name:'ToDo Web App Using MERN Stack',
+            year:'May 2020',
+            description:'A Todo web app built using React for front-end, MongoDB for database, Node and Express for back-end of the web app. The User can add the task with the category, due date and remarks for the task. The User can also delete a particular task and mark the task as completed.',
+            links: ['https://todolist-react.vercel.app'],
+            labels: ['See Project']
+        },
+        {
+            id: 3,
             name:'Movies, Books, Food - All In One',
             year:'June 2020',
             description:'The web app allows users to search for their favorite movies, books, and food along with the weather information for the location of their preference. The app uses different public APIs for providing information to users. The app is built using both React and Angular as different versions of the app.',
@@ -17,20 +25,12 @@ export const PROJECTS =
             labels: ['React Link', 'Angular Link']
         },
         {
-            id: 3,
+            id: 4,
             name:'Like Youtube',
             year:'June 2020',
             description:'A single page web app clone of youtube video page. The app is built using React, Redux and Reactstrap is used for styling the web app along with youtube data API.',
             links: ['http://like-yt-react.vercel.app/'],
             labels: ['See Project']
-        },
-        {
-            id: 4,
-            name:'ToDo Web App Using MERN Stack',
-            year:'May 2020',
-            description:'A Todo web app built using React for front-end, MongoDB for database, Node and Express for back-end of the web app. The User can add the task with the category, due date and remarks for the task. The User can also delete a particular task and mark the task as completed.',
-            links: ['https://github.com/mohit2308jain/ToDo-MERN-Stack'],
-            labels: ['Github Link']
         },
         {
             id: 5,
