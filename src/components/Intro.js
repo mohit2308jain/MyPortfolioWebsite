@@ -15,7 +15,7 @@ class Intro extends React.Component {
               <h1 className="section__title section__title--intro">
                   Hi, I am <div className="font-weight-bold">Mohit Jain</div>
               </h1>
-              <p className="section__subtitle section__subtitle--intro font-weight-bold">MERN Stack Dev</p>
+              <p className="section__subtitle section__subtitle--intro font-weight-bold">React Developer</p>
               <img src={profilepicture} alt="Profile" className="intro__img border border-dark" />
             </div>
           </Container>
