@@ -12,6 +12,6 @@
     .contactContainer{
         background: linear-gradient(110.53deg, rgb(21, 37, 48) 0%, rgb(4, 2, 3) 100%) !important;
         color: white !important;
-        margin-top: 5rem;
+        margin-top: 5rem !important;
     }
 }
