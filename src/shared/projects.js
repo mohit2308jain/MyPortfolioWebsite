@@ -4,7 +4,7 @@ export const PROJECTS =
             id: 1,
             name:'Expenser',
             year:'July 2020',
-            description:'An expense manager app build using React for front-end, PostgreSQL for database, and Node and Express for the back-end of the web app. The User can do add, update, delete the expenses. Also, the app is incorporated with charts for the analysis of expenses.',
+            description:'An expense manager app build using React for front-end, PostgreSQL for database, and Node and Express for the back-end of the web app. The User can add, update, delete the expenses. Also, the app is incorporated with charts for the analysis of expenses.',
             links: ['https://expenser-react.vercel.app'],
             labels: ['See Project']
         },
