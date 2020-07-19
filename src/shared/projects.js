@@ -10,9 +10,9 @@ export const PROJECTS =
         },
         {
             id: 2,
-            name:'ToDo Web App Using MERN Stack',
+            name:'TodoList',
             year:'May 2020',
-            description:'A Todo web app built using React for front-end, MongoDB for database, Node and Express for back-end of the web app. The User can add the task with the category, due date and remarks for the task. The User can also delete a particular task and mark the task as completed.',
+            description:'A Todo web app built using React for front-end, MongoDB for database, Node, and Express for the back-end of the web app. The User can add the task with the category, due date, and remarks for the task. The User can also delete a particular task and mark the task as completed.',
             links: ['https://todolist-react.vercel.app'],
             labels: ['See Project']
         },
