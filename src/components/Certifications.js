@@ -1,6 +1,6 @@
 import React from 'react';
 import '../stylesheets/ProjectAndCerti.css';
-import { Card, CardBody, CardSubtitle, CardText, CardHeader, Button} from 'reactstrap';
+import { Card, CardBody, CardSubtitle, CardText, CardHeader, Button, CardFooter} from 'reactstrap';
 
 const RenderCard = (props) => {
     const item = props.certification
@@ -17,8 +17,10 @@ const RenderCard = (props) => {
                     <CardSubtitle>{item.year}</CardSubtitle>
                     <CardText>{item.organization}
                     </CardText>
-                    <Button color="danger" onClick={() => window.open(link, "_blank")}>{buttonLabel}</Button>
                 </CardBody>
+                <CardFooter>
+                    <Button color="danger" onClick={() => window.open(link, "_blank")}>{buttonLabel}</Button>
+                </CardFooter>
             </Card>
         </div>
     )

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, CardBody, CardTitle, CardSubtitle, CardText, CardHeader, ListGroup, ListGroupItem, Button } from 'reactstrap';
+import { Card, CardBody, CardTitle, CardSubtitle, CardText, 
+    CardHeader, CardFooter, ListGroup, ListGroupItem, Button } from 'reactstrap';
 
 import '../stylesheets/About.css';
 
@@ -26,8 +27,10 @@ class About extends React.Component{
                                         </CardHeader>
                                         <CardBody>
                                             <CardText>{this.props.about}</CardText>
+                                            </CardBody>
+                                            <CardFooter>
                                             <Button color="danger" onClick={() => window.open(link, "_blank")}>Resume</Button>
-                                        </CardBody>
+                                        </CardFooter>
                                     </Card>
                                 </div>
                             </div>

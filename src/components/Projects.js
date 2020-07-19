@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardBody, CardSubtitle, CardText, CardHeader, Button} from 'reactstrap';
+import { Card, CardBody, CardSubtitle, CardText, CardHeader, Button, CardFooter} from 'reactstrap';
 
 import '../stylesheets/ProjectAndCerti.css';
 
@@ -18,6 +18,8 @@ const RenderCard = (props) => {
                     <CardSubtitle>{item.year}</CardSubtitle>
                     <CardText>{item.description}
                     </CardText>
+                </CardBody>
+                <CardFooter>
                     {
                         buttonLabels.map((label, index) => {
                             return(
@@ -27,7 +29,7 @@ const RenderCard = (props) => {
                             )
                         })
                     }
-                </CardBody>
+                </CardFooter>
             </Card>
         </div>
     )
