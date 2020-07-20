@@ -61,7 +61,7 @@ class ContactForm extends React.Component {
                         </div>
 
                         <div className="col-12 offset-md-1 col-md-8">
-                            <Input type="number" name="name" placeholder="Your Mobile No. Here.." 
+                            <Input type="number" name="mobile" placeholder="Your Mobile No. Here.." 
                                 required/>
                         </div>
                     </div>
