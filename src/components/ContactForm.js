@@ -34,15 +34,6 @@ class ContactForm extends React.Component {
                 <Form onSubmit={(event) => this.submitForm(event)}
                 action="https://formspree.io/mzbjkzoe"
                 method="POST">
-                    <div className="row p-2">
-                        <div className="col-12 col-md-2">
-                        <Label className="font-weight-bold">Email: </Label>
-                        </div>
-
-                        <div className="col-12 offset-md-1 col-md-8">
-                            <Input type="email" name="email" placeholder="Your Email Here.."/>
-                        </div>
-                    </div>
 
                     <div className="row p-2">
                         <div className="col-12 col-md-2">
@@ -50,7 +41,28 @@ class ContactForm extends React.Component {
                         </div>
 
                         <div className="col-12 offset-md-1 col-md-8">
-                            <Input type="text" name="name" placeholder="Your Name Here.."/>
+                            <Input type="text" name="name" placeholder="Your Name Here.." required/>
+                        </div>
+                    </div>
+
+                    <div className="row p-2">
+                        <div className="col-12 col-md-2">
+                        <Label className="font-weight-bold">Email: </Label>
+                        </div>
+
+                        <div className="col-12 offset-md-1 col-md-8">
+                            <Input type="email" name="email" placeholder="Your Email Here.." required/>
+                        </div>
+                    </div>
+
+                    <div className="row p-2">
+                        <div className="col-12 col-md-2">
+                            <Label className="font-weight-bold">Mobile: </Label>
+                        </div>
+
+                        <div className="col-12 offset-md-1 col-md-8">
+                            <Input type="number" name="name" placeholder="Your Mobile No. Here.." 
+                                required/>
                         </div>
                     </div>
 
@@ -60,7 +72,7 @@ class ContactForm extends React.Component {
                         </div>
 
                         <div className="col-12 offset-md-1 col-md-8">
-                            <Input type="textarea" name="message" placeholder="Your Message here.."/>
+                            <Input type="textarea" name="message" placeholder="Your Message here.." required/>
                         </div>
                     </div>
 
