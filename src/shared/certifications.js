@@ -9,10 +9,10 @@ export const CERTIFICATIONS =
         },
         {
             id: 2,
-            name:'Front-End JavaScript Frameworks: Angular',
-            year:'Issued May 2020',
-            organization:'Coursera',
-            link: 'https://coursera.org/share/378bbcc956571ba38254b0f0d5b82563'
+            name:'Modern React with Redux',
+            year:'Issued July 2020',
+            organization:'Udemy',
+            link: 'https://www.udemy.com/certificate/UC-dfcefd09-285e-476d-be38-f4536ea50905'
         },
         {
             id: 3,
@@ -23,13 +23,20 @@ export const CERTIFICATIONS =
         },
         {
             id: 4,
+            name:'Front-End JavaScript Frameworks: Angular',
+            year:'Issued May 2020',
+            organization:'Coursera',
+            link: 'https://coursera.org/share/378bbcc956571ba38254b0f0d5b82563'
+        },
+        {
+            id: 5,
             name: 'Software Engineering Virtual Experience',
             year: 'Issued May 2020',
             organization: 'InsideSherpa',
             link: 'https://insidesherpa.s3.amazonaws.com/completion-certificates/JP%20Morgan/R5iK7HMxJGBgaSbvk_JPMorgan%20Chase_GsFtMc3XzL3qeGd9u_completion_certificate.pdf'
         },
         {
-            id: 5,
+            id: 6,
             name:'The Complete Python 3 Course: Go from Beginner to Advanced!',
             year:'Issued January 2018',
             organization:'Udemy',
