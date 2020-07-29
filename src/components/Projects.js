@@ -35,26 +35,24 @@ const RenderCard = (props) => {
     )
 }
 
-class Projects extends React.Component{
+const Projects = (props) => {
 
-    render(){
-        const projects = this.props.projects.map((pro) => {
-            return (
-                <RenderCard project={pro} key={pro.id}/>
-            )
-        })
+    const projects = props.projects.map((pro) => {
+        return (
+            <RenderCard project={pro} key={pro.id}/>
+        )
+    })
 
-        return(
-            <div className="container-fluid py-5 border-bottom border-top border-white" style={{backgroundColor:'#222', color:'white'}}>
-                <div className="border border-white rounded">
-                    <div className="row m-2"><div className='CardHeading h1 col-12'>Projects</div></div>
-                    <div className="row m-2">
-                        {projects}
-                    </div>
+    return(
+        <div className="container-fluid py-5 border-bottom border-top border-white" style={{backgroundColor:'#222', color:'white'}}>
+            <div className="border border-white rounded">
+                <div className="row m-2"><div className='CardHeading h1 col-12'>Projects</div></div>
+                <div className="row m-2">
+                    {projects}
                 </div>
             </div>
-        )
-    }
+        </div>
+    )
 }
 
 export default Projects;

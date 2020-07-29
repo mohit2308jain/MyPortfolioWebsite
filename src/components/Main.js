@@ -13,22 +13,15 @@ import Projects from './Projects';
 import ContactForm from './ContactForm';
 import Header from './Header';
 
-class Main extends React.Component{
-
-    constructor(props){
-        super(props);
-        this.state = {
-            projects: PROJECTS,
-            certifications: CERTIFICATIONS,
-            about: ABOUT,
-            skills: SKILLS,
-            link: LINK,
-            exp: EXP
-        }
-    }
-
-    render(){
-        return(
+const Main = () => {
+    const [projects] = React.useState(PROJECTS);
+    const [certifications, setCertifications] = React.useState(CERTIFICATIONS);
+    const [about, setAbout] = React.useState(ABOUT);
+    const [skills, setSkills] = React.useState(SKILLS);
+    const [link, setLink] = React.useState(LINK);
+    const [exp, setexp] = React.useState(EXP);
+            
+    return(
         <React.Fragment>
             <div style={{position: 'fixed', zIndex: '100', top: '0', right: '0', left: '0'}}>
             <Header />
@@ -36,12 +29,12 @@ class Main extends React.Component{
             <Switch>
                 <Route path='/home' component={() => <div>
                     <Intro />
-                    <Projects projects={this.state.projects} />
+                    <Projects projects={projects} />
                     </div>} />
                 <Route path='/about' component={() => <div>
-                    <About about={this.state.about} skills={this.state.skills}
-                                    link={this.state.link} exp={this.state.exp}/> 
-                    <Certifications certifications={this.state.certifications}/>
+                    <About about={about} skills={skills}
+                                    link={link} exp={exp}/> 
+                    <Certifications certifications={certifications}/>
                     </div> }  />
                 <Route path='/contact' component={ContactForm} />
                 <Redirect to='/home' />
@@ -49,10 +42,7 @@ class Main extends React.Component{
             <Footer />
                 
         </React.Fragment>
-        )
-    }
+    )
 }
-
-
 
 export default Main;

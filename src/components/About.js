@@ -4,11 +4,9 @@ import { Card, CardBody, CardTitle, CardSubtitle, CardText,
 
 import '../stylesheets/About.css';
 
-class About extends React.Component{
-    
-    render(){
+const About = (props) => {
 
-        const link = this.props.link;
+    const link = props.link;
 
         return(
             <React.Fragment>
@@ -26,7 +24,7 @@ class About extends React.Component{
                                         About ME
                                         </CardHeader>
                                         <CardBody>
-                                            <CardText>{this.props.about}</CardText>
+                                            <CardText>{props.about}</CardText>
                                             </CardBody>
                                             <CardFooter>
                                             <Button color="danger" onClick={() => window.open(link, "_blank")}>Resume</Button>
@@ -42,9 +40,9 @@ class About extends React.Component{
                                         Experience
                                         </CardHeader>
                                         <CardBody>
-                                            <CardTitle className="font-weight-bold">{this.props.exp.title}</CardTitle>
-                                            <CardSubtitle>{this.props.exp.period}</CardSubtitle>
-                                            <CardText>{this.props.exp.tasks}</CardText>
+                                            <CardTitle className="font-weight-bold">{props.exp.title}</CardTitle>
+                                            <CardSubtitle>{props.exp.period}</CardSubtitle>
+                                            <CardText>{props.exp.tasks}</CardText>
                                         </CardBody>
                                     </Card>
                                 </div>
@@ -60,7 +58,7 @@ class About extends React.Component{
                                 <CardBody>
                                     <ListGroup>
                                         {
-                                            this.props.skills.map((skill, index) => {
+                                            props.skills.map((skill, index) => {
                                                 return(
                                                     <ListGroupItem key={index}>{skill}</ListGroupItem>
                                                 )
@@ -74,7 +72,7 @@ class About extends React.Component{
                 </div>
             </React.Fragment>            
         )
-    }
+
 }
 
 export default About;
