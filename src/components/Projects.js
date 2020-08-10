@@ -9,8 +9,8 @@ const RenderCard = (props) => {
     const links = item.links;
     
     return(
-        <div className='col-12 col-md-6 my-2'>
-            <Card className="Cards">
+        <div className='d-flex col-12 col-md-6 my-2'>
+            <Card className="Cards flex-fill">
                 <CardHeader tag="h4" style={{ backgroundColor: '#123', color:'#FFF', textAlign:'center'}}>
                 {item.name}
                 </CardHeader>
