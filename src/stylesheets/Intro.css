@@ -26,6 +26,11 @@
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
+@font-face {
+    font-family: My Font;
+    src: url('../assets/Fonts/Metropolis/Metropolis-SemiBold.otf');
+  }
+
 section {
   padding: 5em 2em;
 }
@@ -70,7 +75,8 @@ h3 { font-size: var(--fs-h3) }
 .section__subtitle--about {
     background: var(--clr-accent);
     padding: .25em 1em;
-    font-family: var(--ff-secondary);
+    font-style: normal !important;
+    font-family: My Font !important;
     margin-bottom: 1em;
 }
 
