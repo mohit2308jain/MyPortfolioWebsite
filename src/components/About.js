@@ -12,26 +12,26 @@ const About = (props) => {
             <React.Fragment>
                 <section className="about-me">
                     <h2 className="section__title section__title--about">Who I am</h2>
-                    <p className="section__subtitle section__subtitle--about">Student at SRM Institute of Science & Technology.</p>
+                    <p className="section__subtitle section__subtitle--about">Senior Analyst at Capgemini, India</p>
                 </section>
                 <div className="container-fluid b1">
                     <div className="row p-2">
+                        <div className="col-12">
+                            <Card className="Card1 my-3">
+                                <CardHeader tag="h3" style={{ backgroundColor: '#123', color:'#FFF', textAlign:'center'}}>
+                                About ME
+                                </CardHeader>
+                                <CardBody>
+                                    <CardText>{props.about}</CardText>
+                                    </CardBody>
+                                    <CardFooter>
+                                    <Button color="danger" onClick={() => window.open(link, "_blank")}>Resume</Button>
+                                </CardFooter>
+                            </Card>
+                        </div>
+                    </div>
+                    <div className="row p-2">
                         <div className="col-12 col-md-8">
-                            <div className="row">
-                                <div className="col-12">
-                                    <Card className="Card1 my-3">
-                                        <CardHeader tag="h3" style={{ backgroundColor: '#123', color:'#FFF', textAlign:'center'}}>
-                                        About ME
-                                        </CardHeader>
-                                        <CardBody>
-                                            <CardText>{props.about}</CardText>
-                                            </CardBody>
-                                            <CardFooter>
-                                            <Button color="danger" onClick={() => window.open(link, "_blank")}>Resume</Button>
-                                        </CardFooter>
-                                    </Card>
-                                </div>
-                            </div>
 
                             <div className="row">
                                 <div className="col-12 my-3">
@@ -40,9 +40,20 @@ const About = (props) => {
                                         Experience
                                         </CardHeader>
                                         <CardBody>
-                                            <CardTitle className="font-weight-bold">{props.exp.title}</CardTitle>
-                                            <CardSubtitle>{props.exp.period}</CardSubtitle>
-                                            <CardText>{props.exp.tasks}</CardText>
+                                        {
+                                            props.exp.map((ex, key) => {
+                                                return(
+                                                    <div className="my-3">
+                                                        <CardTitle className="font-weight-bold h4">{key+1}. <u>{ex.title}</u></CardTitle>
+                                                        <CardSubtitle>
+                                                            {ex.period}<br />
+                                                            {ex.location}
+                                                        </CardSubtitle>
+                                                        <CardText>{ex.tasks}</CardText>
+                                                    </div>
+                                                )
+                                            })
+                                        }
                                         </CardBody>
                                     </Card>
                                 </div>

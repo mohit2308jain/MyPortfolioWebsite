@@ -14,7 +14,7 @@ const Intro = () => {
                     <h1 className="section__title section__title--intro">
                         Hi, I am <div className="font-weight-bold">Mohit Jain</div>
                     </h1>
-                    <p className="section__subtitle section__subtitle--intro font-weight-bold">React Developer</p>
+                    <p className="section__subtitle section__subtitle--intro font-weight-bold">Salesforce Developer</p>
                     <img src={profilepicture} alt="Profile" className="intro__img border border-dark" />
                 </div>
                 </Container>
